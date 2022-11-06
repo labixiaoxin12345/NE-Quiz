@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NE-Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      function question1() {
+        document.getElementById("demo").innerHTML = "";
+
+      }
+      </script>
   </head>
   <body>
     <div class="container" style="padding: 20px 10px;">
@@ -16,15 +22,21 @@
           src="Photos/First_Cabinet.jpg" alt="The image to be displayed goes
           here"  />
         </div>
+        <p id="demo">Click start quiz for the first question to appear</p>
 
-        <div id="question-text" class="topMargin20px">
-          <p>Click start quiz for the first question to appear</p>
-        </div>
 
-          <form action="/question1.html" method="POST">
-            <button type="button"> Start quiz</button>
-          </form>
 
+  <button onclick="myFunction()">Start quiz</button>
+
+  <script>
+    function myFunction() {
+      var x = document.createElement("INPUT");
+      <p>Who was the Minister for Finance in Singapore's first cabinet?</p>
+      x.setAttribute("type", "text");
+      x.setAttribute("value", "");
+      document.body.appendChild(x);
+    }
+</script>
         </div>
       </div>
     </div>
