@@ -1,0 +1,16 @@
+.text-center{
+    text-align: center;
+}
+.topMargin20px{
+    margin-top: 20px;
+}
+#quiz-image{
+    height: 30;
+    width: 15;
+}
+img {       /*to align image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000000;
+  }
