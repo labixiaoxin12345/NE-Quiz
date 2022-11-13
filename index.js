@@ -45,6 +45,15 @@ var myQuestions = [
           c: 'Goh Keng Swee'
         },
         correctAnswer: 'a'
+      },
+      {
+        question: "Who was the Prime Minister in Singapore's first cabinet?";
+        answers:{
+          a: 'Yusof Ishak',
+          b: 'Lee Kuan Yew',     //correct answer
+          c: 'Tony Tan Keng Yam',
+        },
+        correctAnswer: 'b'
       }
   ];
   
