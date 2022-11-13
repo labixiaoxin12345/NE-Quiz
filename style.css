@@ -8,9 +8,27 @@
     height: 30;
     width: 15;
 }
-img {       /*to align image */
+.firstcabinet {       /*to align image */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid #D94553;
+    max-width: 100%;
+    height:200px;
+    width:400px;
+    border: 3px solid #59B1C2;
   }
+h1{
+    color:#D94553;
+    text-align: center;
+    background-color: #EDF9EB;
+    padding:10px 20px;
+  }
+#submit{
+    color:#84A5B8;
+    text-align: center;
+    padding: 10px 10px;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}

@@ -1,59 +1,60 @@
 // a c b c a
 var myQuestions = [
     {
-      question: "Who was the Minister for Finance in Singapore's first cabinet?",
-      answers: {
+      question: "Question 1:    Who was the Minister for Finance in Singapore's first cabinet?",
+      answers: {                //array to store options
         a: 'Goh Keng Swee',     //correct answer
         b: 'Ong Pang Boon',
         c: 'Toh Chin Chye'
       },
-      correctAnswer: 'a'
+      correctAnswer: 'a'      //stores the correct answer
      
     },
     {
-      question: "Who was the Minister for Home Affairs in Singapore's first cabinet?",
-      answers: {
+      question: "Question 2:    Who was the Minister for Home Affairs in Singapore's first cabinet?",
+      answers: {                //array to store options
         a: 'Ahmad Ibrahim',
         b: 'Goh Keng Swee',
         c: 'Ong Pang Boon'          //correct answer
       },
-      correctAnswer: 'c'
+      correctAnswer: 'c'      //stores the correct answer
     },
     {
-        question: "Who was the Minister for Culture in Singapore's first cabinet?",
-        answers: {
+        question: "Question 3:    Who was the Minister for Culture in Singapore's first cabinet?",
+        answers: {                //array to store options
           a: 'Ahmad Ibrahim',
           b: 'Sinnathamby Rajaratnam',      //correct answer
           c: 'Toh Chin Chye'
         },
-        correctAnswer: 'b'
+        correctAnswer: 'b'      //stores the correct answer
       },
       {
-        question: "Who was the Deputy Prime Minister in Singapore's first cabinet?",
-        answers: {
-          a: 'Goh Keng Swee',
-          b: 'Sinnathamby Rajaratnam',      
+        question: "Question 4:    Who was the Deputy Prime Minister in Singapore's first cabinet?",
+        answers: {                //array to store options
+          a: 'Sinnathamby Rajaratnam',
+          b: 'Goh Keng Swee',      
           c: 'Toh Chin Chye'        //correct answer
         },
-        correctAnswer: 'c'
+        correctAnswer: 'c'      //stores the correct answer
       },
       {
-        question: "Who was the Minister for Health in Singapore's first cabinet?",
-        answers: {
+        question: "Question 5:    Who was the Minister for Health in Singapore's first cabinet?",
+        answers: {                //array to store options
           a: 'Ahmad Ibrahim',       //correct answer
           b: 'Toh Chin Chye',      
           c: 'Goh Keng Swee'
         },
-        correctAnswer: 'a'
+        correctAnswer: 'a'      //stores the correct answer
       },
+      
       {
-        question: "Who was the Prime Minister in Singapore's first cabinet?";
+        question: "Question 6:    Who was the Prime Minister in Singapore's first cabinet?",
         answers:{
           a: 'Yusof Ishak',
           b: 'Lee Kuan Yew',     //correct answer
           c: 'Tony Tan Keng Yam',
         },
-        correctAnswer: 'b'
+        correctAnswer: 'b'      //stores the correct answer
       }
   ];
   
@@ -61,11 +62,13 @@ var myQuestions = [
   var quizContainer = document.getElementById('quiz');
   var resultsContainer = document.getElementById('results');
   var submitButton = document.getElementById('submit');
+  var timingContainer = document.getElementById('timer');
+
   
-  generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+  generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton, timingContainer);
   
-  function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
-  
+  function generateQuiz(questions, quizContainer, resultsContainer, submitButton, timingContainer){
+
     function showQuestions(questions, quizContainer){
       // we'll need a place to store the output and the answer choices
       var output = [];
@@ -144,5 +147,11 @@ var myQuestions = [
     submitButton.onclick = function(){
       showResults(questions, quizContainer, resultsContainer);
     }
-  
+
+    function countDown(timingContainer){
+      setTimeout(300000)           //count 30 seconds
+      document.getElementById("demo").innerHTML = "30 seconds is up!";
+    }
+
   }
+  
