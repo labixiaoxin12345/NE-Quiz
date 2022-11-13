@@ -1,4 +1,6 @@
 import React from 'react';
+import * as React from "react";
+import { Text, View } from "react-native";
 import { Text, View, StyleSheet, } from 'react-native';
 
 export default function App() {
